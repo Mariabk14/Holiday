@@ -47,15 +47,25 @@ a {
 }
 
 .header {
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../img/header-font-mob.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 542px;
+  max-width: 480px;
 }
 @media screen and (min-width: 768px) {
   .header {
     background-image: url(../img/tablet-header.png);
-    background-size: 768px 700px;
+    max-width: 768px;
+    height: 700px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    background-image: url(../img/desk-header.png);
+    max-width: 1200px;
   }
 }/*# sourceMappingURL=main.css.map */
